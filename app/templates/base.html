@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Sentiment Service</title>
+        {% else %}
+        <title>Welcome to The Sentiment Service!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Sentiment Service: <a href="/index">Home</a></div>
+        <hr />
+        {% block content %}{% endblock %}
+    </body>
+</html>
