@@ -1,1 +1,2 @@
 FLASK_APP=sentiment.py
+FLASK_DEBUG=0
