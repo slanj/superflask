@@ -18,7 +18,7 @@ login.login_view = 'login'
 if not app.debug:
     if app.config['MAIL_SERVER']:
         auth = None
-        if app.config['MAIL_USERNAME'] or app.config['MAIL_PASSWORD']:
+        if app.config['MAIL_USERNAME'] and app.config['MAIL_PASSWORD']:
             auth = (app.config['MAIL_USERNAME'], app.config['MAIL_PASSWORD'])
         secure = None
         if app.config['MAIL_USE_TLS']:
